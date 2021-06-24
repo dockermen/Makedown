@@ -5,6 +5,9 @@
    Shell开启扩展模式匹配shopt -s extglob
    shopt (shell option)
    extglob (extension global)
+   
+   搜索字符串
+   grep  -str-  -path- 
    ```
 
 2. 
