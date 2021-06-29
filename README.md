@@ -14,7 +14,7 @@
 
 ### docker启动
 1. ```python
-   docker run --privileged #docker默认是伪root，以普通用户运行,加参数privileged以超级管理员运行
+   docker run --privileged #docker默认是伪root，以普通用户运行,加参数privileged(享有特权的)以超级管理员运行
 
 1. 
 2.  
