@@ -12,7 +12,9 @@
 
 2. 
 
-### 主题二
+### docker启动
+1. ```python
+   docker run --privileged #docker默认是伪root，以普通用户运行,加参数
 
 1. 
 2.  
