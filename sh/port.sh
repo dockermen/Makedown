@@ -16,6 +16,10 @@ elif [ "$a"x == "ps"x ]
 then
    echo "当前端口情况"
    firewall-cmd --zone=public --list-ports
+elif [ "$a"x == "docker"x ]
+then
+   echo "docker容器ip情况"
+   docker inspect --format='{{.Name}} - {{range .NetworkSettings.Networks}}{{.IPAddress}}{{end}}' $(docker ps -aq)
 else
    echo "没有传递参数"
 fi
