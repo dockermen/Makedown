@@ -25,14 +25,15 @@
 5. 
 
 ### 搭建Http代理
-
+```shell
 1. docker pull dannydirect/tinyproxy
 2.  docker run -d --name='tinyproxy' -p 6666:8888 dannydirect/tinyproxy:latest ANY
 3.  
 4.  
-
+```
 ### 搭建Socks5代理
+```shell
 1. docker pull xkuma/socks5
 2. docker run -d -p 1080:1080 xkuma/socks5
 3. docker run -d -p 1080:1080 -e PROXY_USER=user -e PROXY_PASSWORD=password -e PROXY_SERVER=0.0.0.0:1080 xkuma/socks5
-
+```
